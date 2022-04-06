@@ -49,8 +49,7 @@ export const blackList: blackItem[] = [
     mode: 'reg',
     path: '^com\.fortinet\.forticlient\..*',
     auth: {
-      RunAtLoad: false,
-      KeepAlive: {}
+      RunAtLoad: false
     }
   }
 ]
