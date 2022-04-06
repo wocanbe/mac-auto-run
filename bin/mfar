@@ -1,2 +1,4 @@
+#!/usr/bin/env node
+
 const macAutoStart = require('..')
 macAutoStart.check()
