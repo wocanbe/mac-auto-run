@@ -1,0 +1,30 @@
+{
+  "name": "mac-auto-run",
+  "version": "0.1.0",
+  "description": "A tool to scan app which run at startup",
+  "keywords": [
+    "macbook",
+    "autoRun",
+    "keepAlive",
+    "runAtLoad",
+    "onDemand",
+    "plist"
+  ],
+  "main": "index.js",
+  "bin": {
+    "mfar": "bin/mfar"
+  },
+  "author": "wocanbe@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "plist2": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wocanbe/mac-auto-run.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wocanbe/mac-auto-run.git/issues"
+  },
+  "homepage": "https://github.com/wocanbe/mac-auto-run.git#readme"
+}
