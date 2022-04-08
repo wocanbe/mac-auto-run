@@ -1,17 +1,6 @@
 type keyStr = {
   [key:string]: string
 }
-export type blackItem = {
-  name: string,
-  mode?: 'full'|'reg', // 完全匹配/正则匹配
-  path: string,
-  auth: {
-    RunAtLoad?: boolean,
-    OnDemand?: boolean,
-    KeepAlive?: boolean,
-    SuccessfulExit?: boolean
-  } // 开机运行、后台运行、退出重启
-}
 export const items: keyStr = {
   startup: '/Library/StartupItems/',
   sStartup: '/System/Library/StartupItems/',
@@ -42,14 +31,4 @@ export const whiteList: string[] = [
   items.uAgents + 'com.google.keystone.agent.plist',
   items.daemons + 'com.oracle.oss.mysql.mysqld.plist',
   items.daemons + 'com.docker.vmnetd.plist'
-]
-export const blackList: blackItem[] = [
-  {
-    name: 'forticlient',
-    mode: 'reg',
-    path: '^com\.fortinet\.forticlient\..*',
-    auth: {
-      RunAtLoad: false
-    }
-  }
 ]
